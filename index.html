@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website Contribution - Presentation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .slide {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 30px;
+            margin: 30px auto;
+            max-width: 900px;
+            min-height: 500px;
+            position: relative;
+        }
+        .slide-number {
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+            font-size: 14px;
+            color: #999;
+        }
+        h1 {
+            color: #4285f4;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #5f6368;
+            margin-bottom: 20px;
+        }
+        .code-block {
+            background-color: #f8f9fa;
+            border-left: 4px solid #4285f4;
+            padding: 15px;
+            margin: 15px 0;
+            font-family: monospace;
+            font-size: 14px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+        }
+        .img-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .img-container img {
+            max-width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .highlight {
+            background-color: #ffff99;
+            padding: 0 3px;
+        }
+        .contribution-list li {
+            margin-bottom: 10px;
+        }
+        .navigation {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            gap: 10px;
+        }
+        .navigation button {
+            background-color: #4285f4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .navigation button:hover {
+            background-color: #3367d6;
+        }
+        .two-column {
+            display: flex;
+            gap: 20px;
+        }
+        .column {
+            flex: 1;
+        }
+        .feature-card {
+            border-left: 3px solid #4285f4;
+            padding-left: 15px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <button onclick="prevSlide()">Previous</button>
+        <button onclick="nextSlide()">Next</button>
+    </div>
+    
+    <!-- Slide 1: Title -->
+    <div class="slide" id="slide1">
+        <h1 class="text-center">Website Development Contribution</h1>
+        <div class="text-center mb-4">
+            <img src="/html_assignment_finall/asset/media/img/About/2400569.jpg.jpg" alt="Website Logo" style="max-width: 150px;">
+        </div>
+        <h2 class="text-center">Soo Jian Lin IR 2400569</h2>
+        
+        <div class="text-center mt-5">
+            <p class="fs-5">Presentation of my contributions to the website development project</p>
+            <p class="mt-5">Developed multiple pages including:</p>
+            <p class="fw-bold">Tools, Resources, Forum, About, AI Ethics pages and more</p>
+        </div>
+        
+        <div class="slide-number">1</div>
+    </div>
+    
+    <!-- Slide 2: Overview of Contributions -->
+    <div class="slide" id="slide2" style="display: none;">
+        <h1>My Contributions - Overview</h1>
+        
+        <ul class="contribution-list fs-5">
+            <li>Created the <span class="highlight">basic template structure</span> (header, footer, navigation, main content areas)</li>
+            <li>Developed <span class="highlight">consistent site-wide components</span> (sitemap navigation, theme toggle, media resources)</li>
+            <li>Built complete webpages: <span class="highlight">tools.html, resources.html, forum.html, about.html, AI Ethics.html</span></li>
+            <li>Implemented <span class="highlight">responsive design</span> principles for various screen sizes</li>
+            <li>Researched and incorporated <span class="highlight">relevant media resources</span> (images, videos, GIFs)</li>
+            <li>Wrote <span class="highlight">detailed content and descriptions</span> for technology topics</li>
+            <li>Tested functionality and <span class="highlight">fixed cross-browser compatibility</span> issues</li>
+            <li>Optimized <span class="highlight">user experience</span> with interactive elements and visual feedback</li>
+        </ul>
+        
+        <div class="slide-number">2</div>
+    </div>
+    
+    <!-- Slide 3: Template Structure -->
+    <div class="slide" id="slide3" style="display: none;">
+        <h1>Template Structure Development</h1>
+        
+        <div class="two-column">
+            <div class="column">
+                <h2>Key Template Components</h2>
+                <ul class="contribution-list">
+                    <li><strong>Consistent Header</strong> with logo, navigation menu, and utility buttons</li>
+                    <li><strong>Page-specific Content Area</strong> with standardized styling</li>
+                    <li><strong>Sitemap Footer</strong> providing complete site navigation</li>
+                    <li><strong>Media Resource Section</strong> showcasing available visual assets</li>
+                </ul>
+                
+                <div class="code-block">
+&lt;header&gt;
+    &lt;nav&gt;
+        &lt;div class="nav-container"&gt;
+            &lt;!-- Logo --&gt;
+            &lt;a href="./index.html"&gt;
+                &lt;img src="./logo.png" alt="Logo" class="logo"&gt;
+            &lt;/a&gt;
+            
+            &lt;!-- Navigation Menu --&gt;
+            ...
+        &lt;/div&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;
+                </div>
+            </div>
+            
+            <div class="column">
+                <div class="img-container">
+                    <img src="/presentation/structure templete.png" alt="Website Template Structure" style="max-width: 100%;">
+                    <p class="text-center">Header and Navigation Design</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h5>Consistent Cross-Page Experience</h5>
+                    <p>Created a unified structure ensuring visitors can easily navigate between sections while maintaining visual coherence</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h5>Modular Design System</h5>
+                    <p>Implemented components that could be reused across pages, making maintenance and updates more efficient</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="slide-number">3</div>
+    </div>
+    
+    <!-- Slide 4: Sitemap Navigation -->
+    <div class="slide" id="slide4" style="display: none;">
+        <h1>Sitemap Navigation Implementation</h1>
+        
+        <div class="two-column">
+            <div class="column">
+                <h2>Comprehensive Sitemap Structure</h2>
+                <p>Designed and implemented a detailed sitemap footer on every page with:</p>
+                <ul>
+                    <li>Main navigation categories</li>
+                    <li>Resources & Support sections</li>
+                    <li>Visual media resources showcase</li>
+                    <li>Interactive hover effects and styling</li>
+                </ul>
+                
+                <div class="code-block">
+&lt;main class="sitemap-container"&gt;
+    &lt;section class="sitemap-section"&gt;
+        &lt;h2&gt;Main Navigation&lt;/h2&gt;
+        &lt;div class="sitemap-grid"&gt;
+            &lt;div class="sitemap-item"&gt;
+                &lt;h3&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/h3&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;Homepage&lt;/li&gt;
+                    &lt;li&gt;Featured Content&lt;/li&gt;
+                    &lt;li&gt;Latest Updates&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            ...
+        &lt;/div&gt;
+    &lt;/section&gt;
+    ...
+&lt;/main&gt;
+                </div>
+            </div>
+            
+            <div class="column">
+                <div class="img-container">
+                    <img src="/presentation/sitemap.png" alt="Sitemap Section" style="max-width: 100%;">
+                    <p class="text-center">Sitemap Section with Responsive Grid Layout</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h5>CSS Styling for Sitemap</h5>
+                    <p>Created custom CSS classes like <code>.sitemap-container</code>, <code>.sitemap-grid</code>, and <code>.sitemap-item</code> with hover effects and responsive layouts</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h5>Site-wide Implementation</h5>
+                    <p>Consistently applied this navigation pattern across all pages, ensuring users always have complete site navigation available</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="slide-number">4</div>
+    </div>
+    
+    <!-- Slide 5: AI Ethics Page Development -->
+    <div class="slide" id="slide5" style="display: none;">
+        <h1>AI Ethics Page Development</h1>
+        
+        <div class="two-column">
+            <div class="column">
+                <h2>AI Ethics Page Features</h2>
+                <ul>
+                    <li>Researched and created comprehensive content on AI ethics principles and frameworks</li>
+                    <li>Designed interactive card components with custom animations for ethical principles</li>
+                    <li>Implemented case study sections with custom background styling</li>
+                    <li>Added highlighted text sections for critical information</li>
+                    <li>Created a responsive layout that maintains readability on all devices</li>
+                    <li>Integrated custom quote formatting for expert perspectives</li>
+                </ul>
+                
+                <div class="code-block">
+&lt;style&gt;
+    .ethics-quote {
+        font-style: italic;
+        border-left: 4px solid #6c757d;
+        padding-left: 20px;
+        margin: 25px 0;
+    }
+    
+    .ethics-card {
+        border-radius: 15px;
+        box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+        padding: 25px;
+        margin-bottom: 30px;
+        transition: transform 0.3s, box-shadow 0.3s;
+        border-top: 5px solid #6610f2;
+    }
+    
+    .ethics-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+    }
+    
+    .principle-icon {
+        font-size: 2rem;
+        margin-bottom: 15px;
+        display: block;
+    }
+    
+    .case-study {
+        background-color: rgba(108, 117, 125, 0.1);
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px 0;
+    }
+    
+    .highlight-text {
+        background: linear-gradient(120deg, rgba(102, 16, 242, 0.2), rgba(102, 16, 242, 0));
+        padding: 3px 0;
+    }
+&lt;/style&gt;
+                </div>
+                
+                <div class="code-block">
+&lt;div class="ethics-quote"&gt;
+    "The question is not whether machines can think, but whether humans will
+    learn to build machines that serve humanity rather than control it."
+&lt;/div&gt;
+
+&lt;div class="row mt-5"&gt;
+    &lt;h2 class="mb-4"&gt;⚖️ Core Ethical Principles&lt;/h2&gt;
+    
+    &lt;div class="col-md-4"&gt;
+        &lt;div class="ethics-card"&gt;
+            &lt;span class="principle-icon"&gt;🔍&lt;/span&gt;
+            &lt;h3&gt;Transparency&lt;/h3&gt;
+            &lt;p&gt;AI systems should be understandable and explainable. 
+            Users should know how decisions affecting them are made 
+            and have insight into the factors influencing outcomes.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class="col-md-4"&gt;
+        &lt;div class="ethics-card"&gt;
+            &lt;span class="principle-icon"&gt;⚖️&lt;/span&gt;
+            &lt;h3&gt;Fairness&lt;/h3&gt;
+            &lt;p&gt;AI should not discriminate against individuals or groups 
+            based on protected characteristics such as race, gender, age, 
+            or disability. Systems must be designed to mitigate bias.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class="col-md-4"&gt;
+        &lt;div class="ethics-card"&gt;
+            &lt;span class="principle-icon"&gt;🔒&lt;/span&gt;
+            &lt;h3&gt;Privacy&lt;/h3&gt;
+            &lt;p&gt;AI development must respect individuals' right to privacy 
+            and data protection. Systems should collect and process only 
+            necessary data with appropriate consent and security measures.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                </div>
+            </div>
+            
+            <div class="column">
+                <div class="img-container">
+                    <img src="/presentation/aiethics.png" alt="AI Ethics Content" style="max-width: 100%;">
+                    <p class="text-center">AI Ethics Animated Visualization</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h5>Comprehensive Content Research</h5>
+                    <p>Conducted extensive research on AI ethics frameworks, principles, and real-world case studies to provide accurate and valuable information</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h5>Case Study Implementation</h5>
+                    <p>Created practical examples showing real-world ethical challenges in AI applications with custom styling</p>
+                </div>
+                
+                <div class="code-block">
+&lt;div class="case-study mt-5"&gt;
+    &lt;h3&gt;Case Study: Facial Recognition and Civil Liberties&lt;/h3&gt;
+    &lt;p&gt;Facial recognition technology has been deployed by law enforcement 
+    agencies worldwide, raising significant ethical concerns:&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Studies have shown higher error rates for women and people 
+        with darker skin tones&lt;/li&gt;
+        &lt;li&gt;Mass surveillance applications can chill free expression 
+        and assembly rights&lt;/li&gt;
+        &lt;li&gt;Systems have led to wrongful arrests based on misidentification&lt;/li&gt;
+        &lt;li&gt;Public deployment often occurs without community consent or oversight&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;In response, cities like San Francisco and Boston have banned 
+    governmental use of facial recognition, while companies like IBM, 
+    Microsoft, and Amazon have restricted police access to their facial 
+    recognition technologies pending regulation.&lt;/p&gt;
+&lt;/div&gt;
+                </div>
+                
+                <div class="feature-card">
+                    <h5>Interactive Elements</h5>
+                    <p>Added hover effects for cards, gradient backgrounds for highlighting text, and custom styling for quotes to create an engaging user experience</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h5>Organizational Structure</h5>
+                    <p>Created a logical flow of content from fundamental principles to practical applications and regulatory frameworks, making complex ethical concepts accessible</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="slide-number">5</div>
+    </div>
+    
+    <!-- Slide 6: Tools Page Development -->
+    <div class="slide" id="slide6" style="display: none;">
+        <h1>Tools Page Development</h1>
+        
+        <div class="two-column">
+            <div class="column">
+                <h2>Tools Page Features</h2>
+                <ul>
+                    <li>Created a comprehensive catalog of AI development tools with detailed specifications</li>
+                    <li>Implemented interactive comparison tables with filtering options</li>
+                    <li>Designed collapsible sections for detailed technical specifications</li>
+                    <li>Added user review and rating system for community feedback</li>
+                    <li>Included integration examples showing tools in actual use cases</li>
+                </ul>
+                
+                <div class="code-block">
+&lt;div class="tool-card"&gt;
+    &lt;div class="tool-header"&gt;
+        &lt;img src="./asset/media/img/tools/vscode.png" alt="VS Code"&gt;
+        &lt;div class="tool-title"&gt;
+            &lt;h3&gt;Visual Studio Code&lt;/h3&gt;
+            &lt;div class="tool-vendor"&gt;By Microsoft&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="tool-rating"&gt;
+            &lt;div class="stars"&gt;★★★★★&lt;/div&gt;
+            &lt;div class="rating-count"&gt;(4,256 reviews)&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class="tool-description"&gt;
+        &lt;p&gt;A lightweight but powerful source code editor with built-in 
+        support for JavaScript, TypeScript and Node.js and has a rich 
+        ecosystem of extensions for other languages.&lt;/p&gt;
+    &lt;/div&gt;
+    
+    &lt;div class="tool-features"&gt;
+        &lt;h4&gt;Key Features&lt;/h4&gt;
+        &lt;ul&gt;
+            &lt;li&gt;IntelliSense code completion&lt;/li&gt;
+            &lt;li&gt;Built-in Git integration&lt;/li&gt;
+            &lt;li&gt;Extensions for AI development&lt;/li&gt;
+            &lt;li&gt;Debugging tools&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    
+    &lt;div class="tool-specs"&gt;
+        &lt;div class="spec-item"&gt;
+            &lt;div class="spec-label"&gt;License&lt;/div&gt;
+            &lt;div class="spec-value"&gt;Free, Open Source&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="spec-item"&gt;
+            &lt;div class="spec-label"&gt;Platform&lt;/div&gt;
+            &lt;div class="spec-value"&gt;Windows, macOS, Linux&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="spec-item"&gt;
+            &lt;div class="spec-label"&gt;Latest Version&lt;/div&gt;
+            &lt;div class="spec-value"&gt;1.74&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class="tool-actions"&gt;
+        &lt;a href="./RTX_5090.html" class="btn-details"&gt;View Details&lt;/a&gt;
+        &lt;a href="https://code.visualstudio.com" class="btn-download"&gt;Download&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                </div>
+            </div>
+            
+            <div class="column">
+                <div class="img-container">
+                    <img src="/presentation/tool.png" alt="Tools Page Animation" style="max-width: 100%;">
+                    <p class="text-center">Interactive Tool Comparison Interface</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h5>Advanced Filtering System</h5>
+                    <p>Implemented JavaScript-based filtering that allows users to find tools by category, price range, platform compatibility, and features</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h5>Comparative Analysis</h5>
+                    <p>Created side-by-side comparison tables highlighting differences between similar tools like RTX 5090 vs Tesla P100 specifications</p>
+                </div>
+                
+                <div class="code-block">
+/* CSS for tools page components */
+.tool-card {
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tool-card:hover {
+    transform: 
